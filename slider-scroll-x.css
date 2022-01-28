@@ -1,0 +1,39 @@
+/*! Simple CSS Slider scroll X
+ * https://github.com/jornatf/simple-css-slider-scroll-x
+ * Copyright (c) 2021 Jordan Nataf
+ * Licensed MIT
+ *
+ */
+
+.slider {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: flex;
+    align-items: stretch;
+    scroll-snap-type: x mandatory;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider .slide {
+    flex-shrink: 0;
+    padding: 20px 0 20px 20px;
+    scroll-snap-align: center;
+}
+
+.slider .slide:last-child {
+    padding-right: 20px;
+}
+
+.slider .slide > div {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+}
