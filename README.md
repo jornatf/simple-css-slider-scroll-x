@@ -19,7 +19,7 @@ The directory structure is:
 In your project you can use CSS or SCSS file.
 From this styles you have a HTML structure like this (for exemple):
 
-```
+```html
 <div class="slider">
     <div class="slide">
         <div><!--slide 1--></div>
